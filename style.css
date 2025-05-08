@@ -1,0 +1,97 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* En-tête */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Contenu principal */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Carte profil */
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Galerie de projets */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* 1 seule colonne */
+    }
+
+    .profile-card,
+    .grid-item {
+        width: 100%;
+    }
+}
+
